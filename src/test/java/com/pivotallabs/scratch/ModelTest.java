@@ -3,8 +3,7 @@ package com.pivotallabs.scratch;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.Is.is;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ModelTest {
 
@@ -17,6 +16,6 @@ public class ModelTest {
 
   @Test
   public void testValue() {
-    assertThat(subject.getValue(), is(7));
+    assertThat(subject.getValue()).isEqualTo(7);
   }
 }
