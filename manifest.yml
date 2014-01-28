@@ -1,0 +1,8 @@
+---
+applications:
+- name: T2
+  memory: 256M
+  instances: 1
+  host: av-cf-t2
+  domain: cfapps.io
+  path: build/libs/av-cf-sample2-1.0.war
